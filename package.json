@@ -1,26 +1,26 @@
 {
-	"name": "fbw39_rwd_exercise2",
-	"version": "1.0.0",
-	"description": "",
-	"main": "src/index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon --ignore public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/glaubernespoli/FbW39_RWD_Exercise2.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/glaubernespoli/FbW39_RWD_Exercise2/issues"
-	},
-	"homepage": "https://github.com/glaubernespoli/FbW39_RWD_Exercise2#readme",
-	"dependencies": {
-		"connect-livereload": "^0.6.1",
-		"express": "^4.17.1",
-		"livereload": "^0.9.1",
-		"path": "^0.12.7"
-	}
+    "name": "fbw39_rwd_exercise2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --ignore public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glaubernespoli/FbW39_RWD_Exercise2.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/glaubernespoli/FbW39_RWD_Exercise2/issues"
+    },
+    "homepage": "https://github.com/glaubernespoli/FbW39_RWD_Exercise2#readme",
+    "dependencies": {
+        "connect-livereload": "^0.6.1",
+        "express": "^4.17.1",
+        "livereload": "^0.9.1",
+        "path": "^0.12.7"
+    }
 }
