@@ -24,6 +24,7 @@ a {
     text-decoration: none;
     color: var(--font-color);
     font-weight: bold;
+
 }
 
 h1,
@@ -31,6 +32,7 @@ h2,
 p {
     margin-left: var(--text-margin-mobile);
     margin-right: var(--text-margin-mobile);
+    text-align: center;
 }
 
 /* nav > ul {
@@ -51,8 +53,11 @@ header {
 nav label.navbar-toggle {
     height: var(--nav-bar-height);
     display: flex;
+    width: fit-content;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #chkToggle {
@@ -125,9 +130,30 @@ section:first-of-type {
     position: relative;
     z-index: 2;
     color: var(--about-font-color);
-    text-align: center;
 }
 
-#projects {
-    /* display: grid; */
+#projects div.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    margin: 5vw;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+#projects div.project-box {
+    border: 2px solid var(--bg-color-o);
+}
+
+#projects div.project-box-img {
+    border-bottom: 2px solid var(--bg-color-o);
+}
+
+#projects div.project-box-img img {
+    display: block;
+    width: 100%;
+}
+
+#projects div.project-box-caption {
+    text-align: center;
+    padding: 1em 2em;
 }
