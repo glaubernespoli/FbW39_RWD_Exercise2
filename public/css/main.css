@@ -13,6 +13,11 @@
     --text-margin-mobile: 2vw;
 }
 
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     background-color: var(--bg-color);
     display: grid;
@@ -24,7 +29,6 @@ a {
     text-decoration: none;
     color: var(--font-color);
     font-weight: bold;
-
 }
 
 h1,
@@ -57,7 +61,6 @@ nav label.navbar-toggle {
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
 }
 
 #chkToggle {
@@ -93,19 +96,19 @@ nav label.navbar-toggle {
     border-bottom: 1px solid var(--font-color);
 }
 
-.material-icons.md-18 {
+.md-18 {
     font-size: 18px;
 }
 
-.material-icons.md-24 {
+.md-24 {
     font-size: 24px;
 }
 
-.material-icons.md-36 {
+.md-36 {
     font-size: 36px;
 }
 
-.material-icons.md-48 {
+.md-48 {
     font-size: 48px;
 }
 
@@ -156,4 +159,13 @@ section:first-of-type {
 #projects div.project-box-caption {
     text-align: center;
     padding: 1em 2em;
+}
+
+#contact div.social-network-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+}
+
+#contact div.social-network-container div.social-network-box {
+    text-align: center;
 }
