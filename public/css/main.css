@@ -1,14 +1,19 @@
 :root {
     --bg-color: rgb(24, 26, 27);
-    --bg-color-o: rgba(34, 49, 44, 0.76);
     --shade-color: rgba(0, 0, 0, 0.5);
+
+    --border-color: rgba(34, 49, 44, 0.76);
+    --border-style: 2px solid var(--border-color);
 
     --font-color: rgb(220, 220, 220);
     --about-font-color: rgb(255, 255, 255);
-    --nav-bar-height: 2.5em;
+
     --font-size-mobile: 20px;
     --font-size-tablet: 20px;
     --font-size-desktop: 35px;
+
+    --nav-bar-height: 2.5em;
+
 
     --text-margin-mobile: 2vw;
 }
@@ -39,16 +44,10 @@ p {
     text-align: center;
 }
 
-/* nav > ul {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-} */
-
 header {
     position: fixed;
     z-index: 9999999;
-    border-bottom: 2px solid var(--bg-color-o);
+    border-bottom: var(--border-style);
     width: 100%;
     background-color: var(--bg-color);
     height: var(--nav-bar-height);
@@ -74,7 +73,7 @@ nav label.navbar-toggle {
 }
 
 #chkToggle:checked+#main-nav:last-child {
-    border-bottom: 2px solid var(--bg-color-o);
+    border-bottom: var(--border-style);
 }
 
 #main-nav {
@@ -93,7 +92,7 @@ nav label.navbar-toggle {
 
 #main-nav>li {
     margin: 1.5em;
-    border-bottom: 1px solid var(--font-color);
+    border-bottom: var(--border-style);
 }
 
 .md-18 {
@@ -125,7 +124,8 @@ section:first-of-type {
 #about .shade {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: ock;
+    width: 100% absolute;
     background-color: var(--shade-color);
 }
 
@@ -144,11 +144,11 @@ section:first-of-type {
 }
 
 #projects div.project-box {
-    border: 2px solid var(--bg-color-o);
+    border: var(--border-style);
 }
 
 #projects div.project-box-img {
-    border-bottom: 2px solid var(--bg-color-o);
+    border-bottom: var(--border-style);
 }
 
 #projects div.project-box-img img {
@@ -161,6 +161,10 @@ section:first-of-type {
     padding: 1em 2em;
 }
 
+#contact {
+    padding-bottom: 1em;
+}
+
 #contact div.social-network-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
@@ -168,4 +172,8 @@ section:first-of-type {
 
 #contact div.social-network-container div.social-network-box {
     text-align: center;
+}
+
+footer {
+    border-top: var(--border-style);
 }
