@@ -13,5 +13,5 @@ server.use(express.static(publicPath));
 lrServer.watch(publicPath);
 
 server.listen(PORT, () => {
-    console.log(`Server up on port ${PORT}.`);
+	console.log(`Server up on port ${PORT}.`);
 });
