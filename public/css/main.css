@@ -124,8 +124,8 @@ section:first-of-type {
 #about .shade {
     width: 100%;
     height: 100%;
-    position: ock;
-    width: 100% absolute;
+    position: absolute;
+    width: 100%;
     background-color: var(--shade-color);
 }
 
